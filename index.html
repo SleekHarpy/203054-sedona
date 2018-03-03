@@ -10,25 +10,22 @@
 	
 		<header class="main_header">
 			<nav class="main_navigation">
-				<div>
-					<a href="#">Информация</a>
-				</div>
-				<div>
-					<a href="#">Фото и видео</a>
-				</div>
-				<div>
+				<a class="main_header_logo">
 					<img src="img/logo.png" width="138" height="70" alt="Седона">
-				</div>
-				<div>
-					<a href="#">Карта штата</a>
-				</div>
-				<div>
-					<a href="#">Гостиницы</a>
-				</div>
+				</a>
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="catalog.html">Гостиницы</a></li>
+				</ul>
 			</nav>
 		</header>
 		
 		<main>
+		
+			<h1 class="visually-hidden">Седона</h1>
+			
 			<div class="promo">
 				<div class="promo_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</div>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -40,6 +37,7 @@
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 				</div>
 				<div class="features_item">
+					<img src="img/real_town.png" width="800" height="256" alt="">
 				</div>
 				<div class="features_item">
 					<b>Жильё</b>
@@ -61,6 +59,7 @@
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="features_item">
+					<img src="img/devil_bridge.png" width="800" height="256" alt="Мост дьявола">
 				</div>
 				<div class="features_item">
 					<b>Небольшая площадь</b>
@@ -78,13 +77,15 @@
 					<p>Большинство едет в Гранд-Каньон и толпится там</p>
 				</div>
 			</section>
-			<section class="trip">
+			<section class="search_hotels">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лушие предложения гостиниц в Седоне</p>
+				<a class="btn btn_search_hotels" href=#>Поиск гостиницы в Седоне</a>
+				<img src="img/map.png" width="1200" height="593" alt="Карта">
 			</section>
 		</main>
+		
 		<footer class="main_footer">
-			<img src="img/map.png" width="1200" height="593" alt="Карта">
 			<div class="footer_bottom">
 				<div class="hashtag">#visitsedona</div>
 				<div class="footer_social">
@@ -92,10 +93,10 @@
 					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
 					<a class="social_btn social_btn_yt" href="#">YouTube</a>
 				</div>
-				<div class="footer_copyright">
+				<a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
 					<p>Website by</p>
 					<img class="logo_htmlacademy" src="img/logo_htmlacademy.png" width="115" height="41" alt="HtmlAcademy">
-				</div>
+				</a>
 			</div>
 		</footer>
 
