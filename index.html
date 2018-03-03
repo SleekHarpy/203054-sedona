@@ -2,9 +2,9 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/master.css" rel="stylesheet">
 		<title>HTML Academy: Седона</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 	
@@ -23,57 +23,54 @@
 		</header>
 		
 		<main>
-		
-			<h1 class="visually-hidden">Седона</h1>
-			
 			<div class="promo">
-				<div class="promo_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</div>
+				<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 			</div>
 			<section class="features">
 				<div class="features_item">
 					<h2>Настоящий городок</h2>
-					<div>№1</div>
+					<span>— №1 -</span>
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 				</div>
 				<div class="features_item">
 					<img src="img/real_town.png" width="800" height="256" alt="">
 				</div>
 				<div class="features_item">
-					<b>Жильё</b>
+					<h2>Жильё</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</div>
 				<div class="features_item">
-					<b>Еда</b>
+					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="features_item">
-					<b>Сувениры</b>
+					<h2>Сувениры</h2>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</section>
 			<section class="features">
 				<div class="features_item">
 					<h2>Там есть мост дьявола</h2>
-					<div>№2</div>
+					<span>- №2 -</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="features_item">
 					<img src="img/devil_bridge.png" width="800" height="256" alt="Мост дьявола">
 				</div>
 				<div class="features_item">
-					<b>Небольшая площадь</b>
-					<div>№3</div>
+					<h2>Небольшая площадь</h2>
+					<span>- №3 -</span>
 					<p>Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="features_item">
-					<b>Красивая дорога</b>
-					<div>№4</div>
+					<h2>Красивая дорога</h2>
+					<span>- №4 -</span>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
 				<div>
-					<b>Мало туристов</b>
-					<div>№5</div>
+					<h2>Мало туристов</h2>
+					<span>- №5 -</span>
 					<p>Большинство едет в Гранд-Каньон и толпится там</p>
 				</div>
 			</section>
@@ -81,22 +78,34 @@
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лушие предложения гостиниц в Седоне</p>
 				<a class="btn btn_search_hotels" href=#>Поиск гостиницы в Седоне</a>
+			</section>
+			<section class="map">
+				<h2 class="visually-hidden">Поиск отеля</h2>
+				<form action="https://htmlacademy.ru" method="get" name="search_hotels_form">
+					<p><label>Дата заезда:<input type="text" name="arrival" value="24 апреля 2017"></label></p>
+					<p><label>Дата выезда:<input type="text" name="leave" value="4 июля 2017"></label></p>
+					<p><label>Взрослые:<input type="text" name="adults" value="2"></label></p>
+					<p><label>Дети:<input type="text" name="children" value="0"></label></p>
+					<button class="btn btn_find" type="submit">Найти</button>
+				</form>
 				<img src="img/map.png" width="1200" height="593" alt="Карта">
 			</section>
 		</main>
 		
 		<footer class="main_footer">
 			<div class="footer_bottom">
-				<div class="hashtag">#visitsedona</div>
-				<div class="footer_social">
-					<a class="social_btn social_btn_tw" href="#">Твиттер</a>
-					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-					<a class="social_btn social_btn_yt" href="#">YouTube</a>
+				<div class="hashtag"><a href="#">#visitsedona</a></div>
+				<ul class="footer_social">
+					<li><a class="social_btn social_btn_tw" href="#">Твиттер</a></li>
+					<li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
+					<li><a class="social_btn social_btn_yt" href="#">YouTube</a></li>
+				</ul>
+				<div class="footer_copyright">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<span>Website by</span>
+						<img class="logo_htmlacademy" src="img/logo_htmlacademy.png" width="115" height="41" alt="HtmlAcademy">
+					</a>
 				</div>
-				<a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-					<p>Website by</p>
-					<img class="logo_htmlacademy" src="img/logo_htmlacademy.png" width="115" height="41" alt="HtmlAcademy">
-				</a>
 			</div>
 		</footer>
 
