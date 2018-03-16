@@ -259,18 +259,26 @@ a.filter_sorter_active:active {
 	border: none;
 }
 
-.snippet_info h1 {
+.snippet_title {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
 
-.snippet_info h1:hover {
-	color: red;
-}
-
-.snippet_info a {
+.snippet_title a {
 	color: #000000;
 }
 
+.snippet_title a:hover {
+	color: #81b3d2;
+}
+
+.snippet_title a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.hotel_type {
+	
+}
 
