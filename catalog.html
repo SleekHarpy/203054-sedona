@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -17,7 +18,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a>Гостиницы</a></li>
+					<li><a class="main_navigation_active">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -53,7 +54,7 @@
 							<div class="range_toggle range_toggle_min"></div>
 							<div class="range_toggle range_toggle_max"></div>
 						</div>
-						<button class="btn_trasparent" type="submit">Показать</button>
+						<button class="btn_transparent" type="submit">Показать</button>
 					</fieldset>
 				</form>
 			</section>
@@ -67,15 +68,15 @@
 				<div class="filter_sorter">
 					<h3>Сортировка:</h3>
 					<ul>
-						<li><a>По цене</a></li>
+						<li><a class="filter_sorter_active">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По рейтингу</a></li>
 					</ul>
 				</div>
 				<div class="filter_order">
 					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a class="ascending" href="#">По возрастанию</a></li>
+						<li><a class="descending" href="#">По убыванию</a></li>
 					</ul>
 				</div>
 			</section>

@@ -1,0 +1,276 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-height: 21px;
+	font-weight: regular;
+	color: #333333;
+	font-family: "PT sans", Areal, sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main_navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.main_navigation ul {
+	list-style: none;
+}
+
+.main_navigation a {
+	color: #000000;
+}
+
+.main_navigation a:hover {
+	color: #81b3d2;
+}
+
+.main_navigation a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.promo h1 {
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.promo p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.features {
+	text-align: center;
+}
+
+.feature_item h2 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.feature_item:first-child,
+.feature_item:first-child h2 {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.search_hotels {
+	text-align: center;
+}
+
+.search_hotels h2 {
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.search_hotels p {
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.btn {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.btn_search_hotels {
+	padding: 30px 140px;
+	background-color: #766357;
+}
+
+.btn_search_hotels:hover {
+	background-color: #604e43;
+}
+
+.btn_search_hotels:active {
+	color: #928a85;
+	background-color: #503e33;
+}
+
+.map input {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+	border: none;
+}
+
+.map input:hover {
+	background-color: #ebebeb;
+}
+
+.map input:focus {
+	border: 2px solid #e5e5e5;
+	background-color: #ffffff;
+}
+
+.map label {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.btn_find {
+	padding: 15px 195px;
+	background-color: #81b3d2;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_find:hover {
+	background-color: #669ec0;
+}
+
+.btn_find:active {
+	color: #94b9d2;
+	background-color: #5496bd;
+}
+
+.main_footer {
+	opacity: 0.9;
+	backgroud-color: #ffffff;
+}
+
+.hashtag a {
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.footer_social {
+	list-style: none;
+}
+
+.footer_copyright a {
+	color: #000000;
+	line-height: 26px;
+}
+
+
+
+/* catalog.html */
+
+a.main_navigation_active,
+a.main_navigation_active:hover,
+a.main_navigation_active:active {
+	color: #766357;
+	opacity: 1;
+}
+
+.filter {
+	color: #ffffff;
+	background-color: #688196;
+	background-image: url("../img/filter_background.jpg");
+	background-repeat: no-repeat;
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.filter input[type="text"] {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-align: center;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.btn_transparent {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px 35px;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	background-color: transparent;
+}
+
+.btn_transparent:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.filter_offers {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.filter_sorter {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	list-style: none;
+}
+
+.filter_sorter ul {
+	list-style: none;
+}
+
+.filter_sorter a {
+	color: #000000;
+	opacity: 0.3;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.filter_sorter a:hover {
+	color: #81b3d2;
+	opacity: 1;
+}
+
+.filter_sorter a:active {
+	color: #000000;
+	opacity: 1;
+	border: none;
+}
+
+a.filter_sorter_active,
+a.filter_sorter_active:hover,
+a.filter_sorter_active:active {
+	color: #81b3d2;
+	opacity: 1;
+	border: none;
+}
+
+.snippet_info h1 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.snippet_info h1:hover {
+	color: red;
+}
+
+.snippet_info a {
+	color: #000000;
+}
+
+
