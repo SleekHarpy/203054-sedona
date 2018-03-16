@@ -278,7 +278,38 @@ a.filter_sorter_active:active {
 	opacity: 0.3;
 }
 
-.hotel_type {
-	
+.snippet_btn {
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: 700;
+	padding: 5px 20px;
+	background-color: #81b3d2;
 }
 
+.btn_booking {
+	background-color: #766357;
+}
+
+.btn_more:hover {
+	background-color: #669ec0;
+}
+
+.btn_more:active {
+	color: #94b9d2;
+	background-color: #5496bd;
+}
+
+.btn_booking:hover {
+	background-color: #604e43;
+}
+
+.btn_booking:active {
+	color: #928a85;
+	background-color: #503e33;
+}
+
+.reting_number {
+	padding: 5px 15px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
