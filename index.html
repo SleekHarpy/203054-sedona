@@ -67,7 +67,7 @@
 					<span>— №4 —</span>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
-				<div div class="feature_item">
+				<div class="feature_item">
 					<h2>Мало туристов</h2>
 					<span>— №5 —</span>
 					<p>Большинство едет в Гранд-Каньон и толпится там</p>
@@ -77,8 +77,8 @@
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лушие предложения гостиниц в Седоне</p>
 				<a class="btn btn_search_hotels" href=#>Поиск гостиницы в Седоне</a>
-			</section>
-			<section class="map">
+			
+			<div class="search_form">
 				<h2 class="visually_hidden">Поиск отеля</h2>
 				<form action="https://echo.htmlacademy.ru" method="get" name="search_hotels_form">
 					<p><label>Дата заезда:<input type="text" name="arrival" value="24 апреля 2017"></label></p>
@@ -87,17 +87,20 @@
 					<p><label>Дети:<input type="text" name="children" value="0"></label></p>
 					<button class="btn btn_find" type="submit">Найти</button>
 				</form>
-				<img src="img/map.png" width="1200" height="593" alt="Карта">
+				</div>
 			</section>
+			<img src="img/map.png" width="1200" height="593" alt="Карта">
 		</main>
 
 		<footer class="main_footer">
 			<div class="hashtag"><a href="#">#visitsedona</a></div>
-			<ul class="footer_social">
-				<li><a class="social_btn social_btn_tw" href="#">Твиттер</a></li>
-				<li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
-				<li><a class="social_btn social_btn_yt" href="#">YouTube</a></li>
-			</ul>
+			<div class="footer_social">
+				<ul>
+					<li><a class="social_btn social_btn_tw" href="#">Твиттер</a></li>
+					<li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
+					<li><a class="social_btn social_btn_yt" href="#">YouTube</a></li>
+				</ul>
+			</div>
 			<div class="footer_copyright">
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
 					<span>Website by</span>
