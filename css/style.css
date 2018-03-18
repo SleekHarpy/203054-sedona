@@ -1,3 +1,13 @@
+html { 
+	box-sizing: border-box; 
+}
+
+*, 
+*::before, 
+*::after { 
+	box-sizing: inherit; 
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -13,16 +23,59 @@ a {
 	text-decoration: none;
 }
 
+.main_header {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.main_background {
+	padding-bottom: 505px;
+	background-color: red;
+	background-image: url("../img/index_background.jpg");
+	background-repeat: no-repeat;
+	
+}
+
 .main_navigation {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+	position: relative;
 	background-color: #ffffff;
 }
 
+.main_header_logo {
+	position: absolute;
+	left: 530px;
+}
+
 .main_navigation ul {
+	margin: 0;
+	padding: 15px 0;
 	list-style: none;
+	font-size: 0;
+	
+}
+
+.main_navigation li {
+	display: inline-block;
+	width: 240px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.main_navigation li:nth-child(2) {
+	margin-right: 240px;
+}
+
+.main_navigation li:first-child {
+	padding-left: 0;
+}
+
+.main_navigation li:last-child {
+	padding-right: 0;
 }
 
 .main_navigation a {
@@ -38,33 +91,74 @@ a {
 	opacity: 0.3;
 }
 
+main {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.promo {
+	width: 500px;
+	margin: 0 auto;
+}
+
 .promo h1 {
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+	margin-bottom: 25px;
 }
 
 .promo p {
 	text-align: center;
 	font-size: 14px;
 	line-height: 26px;
+	margin-bottom: 50px;
 }
 
 .features {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 }
 
+.feature_item {
+	padding: 50px 60px;
+	width: 400px;
+}
+
 .feature_item h2 {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 151px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 }
 
+.feature_item span {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.feature_item:nth-child(2),
+.feature_item:nth-child(6) {
+	padding: 0;
+	width: 800px;
+}
+
 .feature_item:first-child,
-.feature_item:first-child h2 {
+.feature_item:first-child h2,
+.feature_item:nth-child(7),
+.feature_item:nth-child(7) h2 {
 	color: #ffffff;
 	background-color: #81b3d2;
+}
+
+.feature_item:nth-child(8), 
+.feature_item:nth-child(9),
+.feature_item:nth-child(10) {
+	background-color: #eeeeee;
 }
 
 .search_hotels {
