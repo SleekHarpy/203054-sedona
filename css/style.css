@@ -13,7 +13,7 @@ body {
 	padding: 0;
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: regular;
+	font-weight: normal;
 	color: #333333;
 	font-family: "PT sans", Areal, sans-serif;
 	text-transform: uppercase;
@@ -64,7 +64,6 @@ a {
 	padding: 15px 0;
 	list-style: none;
 	font-size: 0;
-	
 }
 
 .main_navigation li {
@@ -272,14 +271,18 @@ position: relative;
 }
 
 .main_footer {
+	display: flex;
+	justify-content: space-around;
 	width: 1200px;
+	padding: 35px 0;
 	margin: 0 auto;
 	opacity: 0.9;
-	backgroud-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .hashtag {
 	width: 145px;
+	margin: auto 0;
 }
 
 .hashtag a {
@@ -291,6 +294,10 @@ position: relative;
 
 .footer_social {
 	width: 150px;
+}
+
+.footer_social ul {
+	list-style: none;
 }
 
 .footer_copyright {
@@ -314,11 +321,25 @@ a.main_navigation_active:active {
 }
 
 .filter {
-	padding: 25px 70px;
+	padding: 25px 60px;
 	color: #ffffff;
 	background-color: #688196;
 	background-image: url("../img/filter_background.jpg");
 	background-repeat: no-repeat;
+}
+
+.filter form {
+	display: flex;
+}
+
+.filter fieldset {
+	border: 0;
+	width: 255px;
+}
+
+.filter fieldset:last-child {
+	width: 320px;
+	margin-left: auto;
 }
 
 .filter legend {
@@ -354,7 +375,13 @@ a.main_navigation_active:active {
 	background-color: #ffffff;
 }
 
+.filter_panel {
+	display: flex;
+	padding: 30px 65px;
+}
+
 .filter_offers {
+	margin-right: 50px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -397,7 +424,22 @@ a.filter_sorter_active:active {
 	border: none;
 }
 
+.filter_order {
+	margin-left: auto;
+}
+
+.snippet_item {
+	display: flex;
+	padding: 30px 65px;
+}
+
+.snippet_photo {
+	margin-right: 30px;
+}
+
 .snippet_title {
+	margin: 0;
+	margin-bottom: 5px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -414,6 +456,10 @@ a.filter_sorter_active:active {
 .snippet_title a:active {
 	color: #000000;
 	opacity: 0.3;
+}
+
+.hotel_type {
+	margin-bottom: 15px;
 }
 
 .snippet_btn {
@@ -446,7 +492,18 @@ a.filter_sorter_active:active {
 	background-color: #503e33;
 }
 
-.reting_number {
+.rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: auto;
+}
+
+.rating_star {
+	margin-left: auto;
+}
+
+.rating_number {
 	padding: 5px 15px;
 	color: #666666;
 	background-color: #f2f2f2;
