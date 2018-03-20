@@ -69,7 +69,6 @@ a {
 .main_navigation li {
 	display: inline-block;
 	width: 240px;
-	text-align: center;
 	font-size: 14px;
 }
 
@@ -77,12 +76,15 @@ a {
 	margin-right: 240px;
 }
 
-.main_navigation li:first-child {
-	padding-left: 0;
+.main_navigation li:nth-child(1), 
+.main_navigation li:nth-child(2){
+	padding-left: 72px;
 }
 
-.main_navigation li:last-child {
-	padding-right: 0;
+.main_navigation li:nth-child(3),
+.main_navigation li:nth-child(4) {
+	text-align: right;
+	padding-right: 72px;
 }
 
 .main_navigation a {
@@ -321,7 +323,7 @@ a.main_navigation_active:active {
 }
 
 .filter {
-	padding: 25px 60px;
+	padding: 25px 72px;
 	color: #ffffff;
 	background-color: #688196;
 	background-image: url("../img/filter_background.jpg");
@@ -333,6 +335,8 @@ a.main_navigation_active:active {
 }
 
 .filter fieldset {
+	margin: 0;
+	padding: 0;
 	border: 0;
 	width: 255px;
 }
@@ -377,7 +381,7 @@ a.main_navigation_active:active {
 
 .filter_panel {
 	display: flex;
-	padding: 30px 65px;
+	padding: 30px 72px;
 }
 
 .filter_offers {
@@ -430,7 +434,7 @@ a.filter_sorter_active:active {
 
 .snippet_item {
 	display: flex;
-	padding: 30px 65px;
+	padding: 30px 72px;
 }
 
 .snippet_photo {
