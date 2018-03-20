@@ -95,7 +95,7 @@ a {
 	color: #81b3d2;
 }
 
-.main_navigation a:active {
+.main_navigation a:active:not(.main_header_logo) {
 	color: #000000;
 	opacity: 0.3;
 }
