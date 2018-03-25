@@ -1,5 +1,5 @@
 html { 
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 *,
@@ -16,6 +16,7 @@ body {
 	line-height: 21px;
 	font-weight: normal;
 	color: #333333;
+	background-color: #f2f2f2;
 	font-family: "PT sans", Areal, sans-serif;
 	text-transform: uppercase;
 }
@@ -39,10 +40,11 @@ a {
 	width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
 }
 
 .main_background {
-	padding-bottom: 505px;
+	padding-bottom: 508px;
 	background-color: #85a3c3;
 	background-image: url("../img/index_background.jpg");
 	background-repeat: no-repeat;
@@ -65,13 +67,14 @@ a {
 
 .main_navigation ul {
 	margin: 0;
-	padding: 13px 0;
+	padding: 15px 0;
 	list-style: none;
 	font-size: 0;
 }
 
 .main_navigation li {
 	display: inline-block;
+	vertical-align: middle;
 	width: 240px;
 	font-size: 14px;
 }
@@ -102,6 +105,7 @@ a {
 .main_navigation a:active:not(.main_header_logo) {
 	color: #000000;
 	opacity: 0.3;
+
 }
 
 .promo {
@@ -115,7 +119,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 
 .promo p {
@@ -235,7 +239,19 @@ a {
 	line-height: 24px;
 	position: relative;
 	text-align: center;
-	
+}
+
+.search_hotels_map {
+	min-height: 593px; /* Чтобы футер не залезал на блок "search_hotels" если не загрузится iframe или изображение карты */
+	background-color: #f2f1ee;
+}
+
+.search_hotels_map iframe {
+	position: relative;
+}
+
+.search_hotels_map img {
+	margin-top: -593px;
 }
 
 .search_hotels h2 {
@@ -246,6 +262,7 @@ a {
 
 .btn {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -490,7 +507,7 @@ a {
 }
 
 .footer_position {
-	bottom: 5px;;
+	position: relative;
 	margin: 0 auto;
 	margin-top: -125px;
 }
@@ -636,7 +653,7 @@ a.main_navigation_active:active {
 }
 
 .filter legend {
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
@@ -686,12 +703,12 @@ input[type="checkbox"]:disabled + label {
 }
 
 .filter_range legend {
-	margin-bottom: 9px;
+	margin-bottom: 11px;
 }
 
 .price_controls {
 	position: relative;
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 	font-size: 0;
 	border: 2px solid #ffffff;
@@ -711,23 +728,31 @@ input[type="checkbox"]:disabled + label {
 
 .price_controls label {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 21px;
 	vertical-align: top;
-	corsor: pointer;
+	cursor: pointer;
 }
 
 .price_controls .min_price,
 .price_controls .max_price {
 	width: 90px;
-	padding-left: 65px;
+	padding: 7px 0;
+	padding-left: 62px;
+}
+
+.price_controls .max_price {
+	padding-left: 56px;
 }
 
 .price_controls input {
-	width: 50px;
+	width: 40px;
+	padding: 0;
 	margin: 0;
 	color: inherit;
-	font: inherit;
+	font-size: 14px;
+	line-height: 21px;
 	background: none;
 	border: none;
 }
@@ -796,7 +821,7 @@ input[type="checkbox"]:disabled + label {
 	display: flex;
 	position: relative;
 	padding: 30px 72px;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
 
 .filter_panel::after {
@@ -810,7 +835,7 @@ input[type="checkbox"]:disabled + label {
 }
 
 .filter_offers {
-	margin-right: 50px;
+	margin-right: 48px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -819,7 +844,7 @@ input[type="checkbox"]:disabled + label {
 
 .filter_sorter {
 	display: flex;
-	padding: 5px 0;
+	padding: 6px 0;
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
@@ -880,6 +905,7 @@ a.filter_sorter_active:active {
 
 .filter_order li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .ascending::after{
@@ -909,19 +935,23 @@ a.filter_sorter_active:active {
 	border-top: 10px solid #81b3d2;
 }
 
-.ascending:hover::after {
-	border-bottom: 10px solid #231f20;
-}
-
-.descending:hover::after {
-	border-top: 10px solid #231f20;
-}
-
-.ascending:active::after {
+.ascending.active::after {
 	border-bottom: 10px solid #81b3d2;
 }
 
-.descending:active::after {
+.ascending:hover:not(.active)::after {
+	border-bottom: 10px solid #231f20;
+}
+
+.descending:hover:not(.active)::after {
+	border-top: 10px solid #231f20;
+}
+
+.ascending:active:not(.active)::after {
+	border-bottom: 10px solid #81b3d2;
+}
+
+.descending:active:not(.active)::after {
 	border-top: 10px solid #81b3d2;
 }
 
@@ -929,17 +959,19 @@ a.filter_sorter_active:active {
 	display: flex;
 	position: relative;
 	padding: 0 72px;
-	margin-bottom: 55px;
+	padding-bottom: 28px;
+	margin-bottom: 27px;
 }
 
 .snippet_item:last-child {
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
 .snippet_item::after {
 	content: "";
 	position: absolute;
-	top: 124px;
+	/*top: 124px;*/
+	bottom: 0;
 	left: 0;
 	width: 1200px;
 	height: 1px;
@@ -951,6 +983,7 @@ a.filter_sorter_active:active {
 }
 
 .snippet_title {
+	width: 750px;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 5px;
@@ -976,7 +1009,7 @@ a.filter_sorter_active:active {
 	display: inline-flex;
 	justify-content: space-between;
 	width: 182px;
-	margin-bottom: 19px;
+	margin-bottom: 18px;
 }
 
 .snippet_btn {
