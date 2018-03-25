@@ -43,6 +43,7 @@ a {
 
 .main_background {
 	padding-bottom: 505px;
+	background-color: #85a3c3;
 	background-image: url("../img/index_background.jpg");
 	background-repeat: no-repeat;
 }
@@ -231,18 +232,16 @@ a {
 }
 
 .search_hotels {
+	line-height: 24px;
 	position: relative;
 	text-align: center;
+	
 }
 
 .search_hotels h2 {
 	font-size: 30px;
 	line-height: 36px;
 	color: #000000;
-}
-
-.search_hotels {
-	line-height: 24px;
 }
 
 .btn {
@@ -486,14 +485,14 @@ a {
 .main_footer {
 	display: flex;
 	padding: 35px 0;
-	background-color: rgb(255, 255, 255, 0.9);
+	width: 1200px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer_position {
-	position: absolute;
 	bottom: 5px;;
-	left: 50%;
-	transform: translateX(-50%);
+	margin: 0 auto;
+	margin-top: -125px;
 }
 
 .hashtag {
@@ -546,17 +545,28 @@ a {
 	background-position: 50% 50%;
 }
 
+.social_btn_tw:active {
+	background-image: url("../img/twitter_act.svg");
+}
+
 .social_btn_fb {
 	background-image: url("../img/facebook.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
+.social_btn_fb:active {
+	background-image: url("../img/facebook_act.svg");
+}
+
 .social_btn_yt {
 	background-image: url("../img/youtube.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	margin-right: 0;
+}
+
+.social_btn_yt:active {
+	background-image: url("../img/youtube_act.svg");
 }
 
 .footer_copyright {
