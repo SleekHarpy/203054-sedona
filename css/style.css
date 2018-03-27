@@ -290,9 +290,14 @@ a {
     left: 50%;
     padding: 55px 55px;
     transform: translateX(-50%);
+	display: none;
     width: 570px;
     text-align: right;
     background-color: #ffffff;
+}
+
+.search_modal_show {
+	display: block;
 }
 
 .search_form {
