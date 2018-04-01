@@ -9,10 +9,10 @@
     </head>
     <body>
         <div class="shadow_container">
-            <header class="main_header main_background">
+            <header class="main_header">
                 <nav class="main_navigation">
                     <a class="main_header_logo">
-                    <img src="img/logo.png" width="138" height="70" alt="Седона">
+                        <img src="img/logo.png" width="138" height="70" alt="Седона">
                     </a>
                     <ul>
                         <li><a href="#">Информация</a></li>
@@ -21,6 +21,7 @@
                         <li><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </nav>
+                <div class="main_background"></div>
             </header>
             <main>
                 <div class="promo">
@@ -34,7 +35,7 @@
                             <span>— №1 —</span>
                             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
-                        <img src="img/real_town.png" width="800" height="256" alt="Дома Седоны">
+                        <img src="img/real_town.jpg" width="800" height="256" alt="Дома Седоны">
                     </div>
                     <div class="feature_item feature_icon housing">
                         <h2>Жильё</h2>
@@ -49,9 +50,9 @@
                         <p>Не только китайского, но и местного производства!</p>
                     </div>
                     <div class="feature_item">
-                        <img src="img/devil_bridge.png" width="800" height="256" alt="Мост дьявола">
+                        <img src="img/devil_bridge.jpg" width="800" height="256" alt="Мост дьявола">
                         <div  class="feature_item_desc">
-                            <h2>Там есть мост дьявола</h2>
+                            <h2>Там есть <br> мост дьявола</h2>
                             <span>— №2 —</span>
                             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
@@ -85,25 +86,25 @@
                         <form class="search_form" action="https://echo.htmlacademy.ru" method="get" name="search_hotels_form">
                             <p class="search_form_item">
                                 <label for="arrival">Дата заезда:</label>
-                                <input id="arrival" type="text" name="arrival" value="24 апреля 2017">
-                                <button class="btn_calendar calendar_arrival" type="button">Календарь</button>
+                                <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+                                <button class="btn_calendar calendar_arrival" type="button"><span class="visually_hidden">Календарь</span></button>
                             </p>
                             <p class="search_form_item">
                                 <label for="leave">Дата выезда:</label>
-                                <input id="leave" type="text" name="leave" value="4 июля 2017">
-                                <button class="btn_calendar calendar_leave" type="button">Календарь</button>
+                                <input id="leave" type="text" name="leave" placeholder="4 июля 2017">
+                                <button class="btn_calendar calendar_leave" type="button"><span class="visually_hidden">Календарь</span></button>
                             </p>
                             <p class="search_form_item">
                                 <label for="adults">Взрослые:</label>
-                                <input id="adults" type="text" name="adults" value="2">
-                                <button class="btn_plus plus_adults" type="button">Плюс</button>
-                                <button class="btn_minus minus_adults" type="button">Минус</button>
+                                <input id="adults" type="text" name="adults" placeholder="2">
+                                <button class="btn_plus plus_adults" type="button"><span class="visually_hidden">Плюс</span></button>
+                                <button class="btn_minus minus_adults" type="button"><span class="visually_hidden">Минус</span></button>
                             </p>
                             <p class="search_form_item">
                                 <label for="children">Дети:</label>
-                                <input id="children" type="text" name="children" value="0">
-                                <button class="btn_plus plus_children" type="button">Плюс</button>
-                                <button class="btn_minus minus_children" type="button">Минус</button>
+                                <input id="children" type="text" name="children" placeholder="0">
+                                <button class="btn_plus plus_children" type="button"><span class="visually_hidden">Плюс</span></button>
+                                <button class="btn_minus minus_children" type="button"><span class="visually_hidden">Минус</span></button>
                             </p>
                             <button class="btn btn_find" type="submit">Найти</button>
                         </form>
@@ -114,9 +115,9 @@
                 <div class="hashtag"><a href="#">#visitsedona</a></div>
                 <div class="footer_social">
                     <ul>
-                        <li><a class="social_btn social_btn_tw" href="#">Твиттер</a></li>
-                        <li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
-                        <li><a class="social_btn social_btn_yt" href="#">YouTube</a></li>
+                        <li><a class="social_btn social_btn_tw" href="#"><span class="visually_hidden">Твиттер</span></a></li>
+                        <li><a class="social_btn social_btn_fb" href="#"><span class="visually_hidden">Фейсбук</span></a></li>
+                        <li><a class="social_btn social_btn_yt" href="#"><span class="visually_hidden">YouTube</span></a></li>
                     </ul>
                 </div>
                 <div class="footer_copyright">
@@ -130,7 +131,6 @@
                 </div>
             </footer>
         </div>
-		
-		<script src="js/search_modal_min.js"></script>
+        <script src="js/search_modal_min.js"></script>
     </body>
 </html>

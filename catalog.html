@@ -11,8 +11,8 @@
         <div class="shadow_container">
             <header class="main_header">
                 <nav class="main_navigation">
-                    <a href="index.html" class="main_header_logo">
-                    <img src="img/logo.png" width="138" height="70" alt="Седона">
+                    <a class="main_header_logo" href="index.html">
+                        <img src="img/logo.png" width="138" height="70" alt="Седона">
                     </a>
                     <ul>
                         <li><a href="#">Информация</a></li>
@@ -29,21 +29,21 @@
                     <form action="https://echo.htmlacademy.ru" method="get" name="filter_form">
                         <fieldset>
                             <legend>Инфраструктура:</legend>
-                            <input id="pool" type="checkbox" name="pool" checked>
-                            <label for="pool">Бассейн</label><br>
-                            <input id="parking" type="checkbox" name="parking">
-                            <label for="parking">Парковка</label><br>
-                            <input id="wifi" type="checkbox" name="wifi">
-                            <label for="wifi">Wi-Fi</label>
+                            <input class="filter_checkbox visually_hidden" id="pool" type="checkbox" name="pool" checked>
+                            <label class="checkbox_label" for="pool">Бассейн</label>
+                            <input class="filter_checkbox visually_hidden" id="parking" type="checkbox" name="parking">
+                            <label class="checkbox_label" for="parking">Парковка</label>
+                            <input class="filter_checkbox visually_hidden" id="wifi" type="checkbox" name="wifi">
+                            <label class="checkbox_label" for="wifi">Wi-Fi</label>
                         </fieldset>
                         <fieldset>
                             <legend>Тип жилья:</legend>
-                            <input id="hotel" type="checkbox" name="hotel" checked>
-                            <label for="hotel">Гостиница</label><br>
-                            <input id="motel" type="checkbox" name="motel" checked>
-                            <label for="motel">Мотель</label><br>
-                            <input id="apartments" type="checkbox" name="apartments" checked>
-                            <label for="apartments">Апартаменты</label>
+                            <input class="filter_checkbox visually_hidden" id="hotel" type="checkbox" name="hotel" checked>
+                            <label class="checkbox_label" for="hotel">Гостиница</label>
+                            <input class="filter_checkbox visually_hidden" id="motel" type="checkbox" name="motel" checked>
+                            <label class="checkbox_label" for="motel">Мотель</label>
+                            <input class="filter_checkbox visually_hidden" id="apartments" type="checkbox" name="apartments" checked>
+                            <label class="checkbox_label" for="apartments">Апартаменты</label>
                         </fieldset>
                         <fieldset class="filter_range">
                             <legend>Стоимость в сутки (р):</legend>
@@ -77,15 +77,15 @@
                     </div>
                     <div class="filter_order">
                         <ul>
-                            <li><a class="ascending" href="#">По возрастанию</a></li>
-                            <li><a class="descending active" href="#">По убыванию</a></li>
+                            <li><a class="ascending" href="#"><span class="visually_hidden">По возрастанию</span></a></li>
+                            <li><a class="descending active" href="#"><span class="visually_hidden">По убыванию</span></a></li>
                         </ul>
                     </div>
                 </section>
                 <section class="snippets">
                     <article class="snippet_item">
                         <div class="snippet_photo">
-                            <img src="img/amara.png" width="135" height="90" alt="Amara Resotr & Spa">
+                            <img src="img/amara.jpg" width="135" height="90" alt="Amara Resotr & Spa">
                         </div>
                         <div class="snippet_info">
                             <h1 class="snippet_title"><a href="#">Amara Resort &amp; Spa</a></h1>
@@ -98,13 +98,13 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <span class="rating_star"><img src="img/4_stars.png" width="90" height="17" alt="4 звезды"></span>
+                            <span class="rating_star" aria-label="4 звезды"></span>
                             <span class="rating_number">Рейтинг: 8,5</span>
                         </div>
                     </article>
                     <article class="snippet_item">
                         <div class="snippet_photo">
-                            <img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
+                            <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
                         </div>
                         <div class="snippet_info">
                             <h1 class="snippet_title"><a href="#">Desert Quail Inn</a></h1>
@@ -117,13 +117,13 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <span class="rating_star"><img src="img/3_stars.png" width="65" height="17" alt="3 звезды"></span>
+                            <span class="rating_star" aria-label="3 звезды"></span>
                             <span class="rating_number">Рейтинг: 8,9</span>
                         </div>
                     </article>
                     <article class="snippet_item">
                         <div class="snippet_photo">
-                            <img src="img/villas.png" width="135" height="90" alt="Villas at Poco Diablo">
+                            <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                         </div>
                         <div class="snippet_info">
                             <h1 class="snippet_title"><a  href="#">Villas at Poco Diablo</a></h1>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <span class="rating_star"><img src="img/2_stars.png" width="41" height="17" alt="2 звезды"></span>
+                            <span class="rating_star" aria-label="2 звезды"></span>
                             <span class="rating_number">Рейтинг: 9,2</span>
                         </div>
                     </article>
@@ -146,9 +146,9 @@
                 <div class="hashtag"><a href="#">#visitsedona</a></div>
                 <div class="footer_social">
                     <ul>
-                        <li><a class="social_btn social_btn_tw" href="#">Твиттер</a></li>
-                        <li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
-                        <li><a class="social_btn social_btn_yt" href="#">YouTube</a></li>
+                        <li><a class="social_btn social_btn_tw" href="#"><span class="visually_hidden">Твиттер</span></a></li>
+                        <li><a class="social_btn social_btn_fb" href="#"><span class="visually_hidden">Фейсбук</span></a></li>
+                        <li><a class="social_btn social_btn_yt" href="#"><span class="visually_hidden">YouTube</span></a></li>
                     </ul>
                 </div>
                 <div class="footer_copyright">
