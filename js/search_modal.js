@@ -13,12 +13,13 @@ popup.classList.add('search_modal_hidden');
 link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("search_modal_show");
+    popup.classList.remove("search_modal_error");
     arrival.focus();
 });
 
 form.addEventListener("submit", function(evt) {
     if (!arrival.value || !leave.value || !adults.value || !children.value) {
         evt.preventDefault();
-        console.log("Нужно заполнить поля");
+        popup.classList.add("search_modal_error");
     }
 });
